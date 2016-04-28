@@ -1,9 +1,10 @@
 var express = require('express');
-var app = express();
+var serveStatic = require("serve-static");
 
-app.get('/', function (req, res) {
-    res.send('Hello from Cisco Shipped!');
-});
+var app = express(); 
+app.use(serveStatic(__dirname + "/.")); 
+
+
 
 var server = app.listen(3000, function () {
 
