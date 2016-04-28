@@ -78,7 +78,7 @@ function renderApiData(data) {
         var graphData = {
             name : data.id,
             parent : null,
-            icon: "img/v2.png",
+            icon: "img/v2.PNG",
             children : []
         };
         
@@ -86,7 +86,7 @@ function renderApiData(data) {
             var host = {
                 name : uniqueHosts[i],
                 parent : data.id,
-                icon: "img/c1.png",
+                icon: "img/c1.PNG",
                 children : []
             };
         
